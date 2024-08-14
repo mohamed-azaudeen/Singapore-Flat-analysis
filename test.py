@@ -3,7 +3,8 @@ import pandas as pd
 import streamlit as st
 from sklearn.preprocessing import LabelEncoder
 
-df=pd.read_csv(r"C:\Users\azaru\Azar documents\Data science - GUVI\capstone project\project 5 - Singapore  Resale Flat Prices Predicting\final_dataset.csv")
+url = 'http://192.168.0.169:8000/final_dataset.csv'
+df = pd.read_csv(url)
 df = df.drop(['Unnamed: 0'],axis=1)
 
 
